@@ -30,4 +30,32 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 
 #### Module bundler: Webpack
 
-(In Progress...)
+##### Plugins
+
+ - [clean-webpack-plugin](https://www.npmjs.com/package/clean-webpack-plugin) to clean the output directory before every build
+ - [copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin) to copy static resources to the output directory
+ - [extract-text-webpack-plugin](https://www.npmjs.com/package/extract-text-webpack-plugin) to extract CSS stylesheets as a separate bundle to the output directory
+ - [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin) to inject entry-points into the startup html page to the output directory
+ - [uglifyjs-webpack-plugin](https://www.npmjs.com/package/uglifyjs-webpack-plugin) to minify JavaScript before bundling them to the output directory
+
+##### Loaders
+
+- [html-loader](https://www.npmjs.com/package/html-loader) to bundle html entry points
+- [style-loader](https://www.npmjs.com/package/style-loader) to bundle CSS stylesheets
+- [css-loader](https://www.npmjs.com/package/css-loader) to work with style-loader for bundling of CSS stylesheets
+- [less-loader](https://www.npmjs.com/package/less-loader) to transpile Less CSS into regular CSS
+- [file-loader](https://www.npmjs.com/package/file-loader) to work with other file types
+- [babel-loader](https://www.npmjs.com/package/babel-loader) to perform babel transpilations with the help of supporting dependencies
+
+##### Supporting dependencies
+
+ - [babel-core](https://www.npmjs.com/package/babel-core), [babel-preset-es2015](https://www.npmjs.com/package/babel-preset-es2015) to support babel-loader
+ - [less](https://www.npmjs.com/package/less) to help less-loader with transpilation of Less CSS into regular CSS
+ - [webpack-merge](https://www.npmjs.com/package/webpack-merge) to be able to use a common configuration across *dev* and *prod*
+
+##### Commands
+
+ - `npm run develop` to run Webpack with development configuration and keep watching for file changes within source.  
+ In this mode, Webpack generates source-maps for bundled JavaScript resources to simplify debugging of JavaScript in the web-browser.
+ - `npm run build` to run Webpack with production configuration.  
+ In this mode, Webpack minifies the JavaScript bundles and there are no source-maps created.
