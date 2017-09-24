@@ -1,5 +1,8 @@
 /* global require module __dirname */
 
+const sourceDir = 'src/client';
+const outputDir = 'public';
+
 const path = require('path');
 
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -8,10 +11,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJSWebpackPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const clean = new CleanWebpackPlugin(['public']);
+const clean = new CleanWebpackPlugin([outputDir]);
 const copy = new CopyWebpackPlugin([
     {
-        from: 'src/client/data',
+        from: sourceDir + '/data',
         to: 'data',
         toType: 'dir'
     },
@@ -25,17 +28,17 @@ const copy = new CopyWebpackPlugin([
         toType: 'dir'
     },
     {
-        from: 'src/client/favicon.ico'
+        from: sourceDir + '/favicon.ico'
     }
 ]);
 const extractCSS = new ExtractTextPlugin('styles/styles.css');
 const html = new HtmlWebpackPlugin({
-    template: 'src/client/index.html'
+    template: sourceDir + '/index.html'
 });
 
 module.exports = {
     entry: {
-        app: './src/client/scripts/app.js'
+        app: './' + sourceDir + '/scripts/app.js'
     },
     module: {
         rules: [
@@ -94,7 +97,7 @@ module.exports = {
     ],
     output: {
         filename: 'scripts/[name].js',
-        path: path.resolve(__dirname, 'public'),
+        path: path.resolve(__dirname, outputDir),
         publicPath: '/'
     }
 };
