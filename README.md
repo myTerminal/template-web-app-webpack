@@ -49,7 +49,7 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 
 ##### Supporting dependencies
 
- - [babel-core](https://www.npmjs.com/package/babel-core), [babel-preset-es2015](https://www.npmjs.com/package/babel-preset-es2015) to support babel-loader
+ - [babel-core](https://www.npmjs.com/package/babel-core), [babel-preset-env](https://www.npmjs.com/package/babel-preset-env) to support babel-loader
  - [bable-preset-react](https://www.npmjs.com/package/babel-preset-react) to transpile JSX files to regular JavaScript files that web-browsers can interpret
  - [less](https://www.npmjs.com/package/less) to help less-loader with transpilation of Less CSS into regular CSS
  - [webpack-merge](https://www.npmjs.com/package/webpack-merge) to be able to use a common configuration across *dev* and *prod*
