@@ -21,8 +21,8 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 
 #### Web Application
 
- - [AngularJS](https://angularjs.org/)
- - [Angular UI Router](https://ui-router.github.io/)
+ - [React](https://facebook.github.io/react/)
+ - [ReactDOM](https://facebook.github.io/react/docs/react-dom.html)
  - [Bootstrap 3](https://getbootstrap.com/docs/3.3/)
  - [jQuery](https://jquery.com/) as a dependency for Bootstrap
  - [ES2015](http://es6-features.org/)
@@ -50,6 +50,7 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 ##### Supporting dependencies
 
  - [babel-core](https://www.npmjs.com/package/babel-core), [babel-preset-es2015](https://www.npmjs.com/package/babel-preset-es2015) to support babel-loader
+ - [bable-preset-react](https://www.npmjs.com/package/babel-preset-react) to transpile JSX files to regular JavaScript files that web-browsers can interpret
  - [less](https://www.npmjs.com/package/less) to help less-loader with transpilation of Less CSS into regular CSS
  - [webpack-merge](https://www.npmjs.com/package/webpack-merge) to be able to use a common configuration across *dev* and *prod*
  - [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) to be able to live-reload the web-browser when run in *live* mode.
