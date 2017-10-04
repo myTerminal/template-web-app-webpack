@@ -19,10 +19,13 @@ var Banner = React.createClass({
 
 var Test = React.createClass({
     render: function () {
-        return <div>
-            <Banner />
-            <div className='test'>This is a component!</div>
-            </div>;
+        return (<div>
+                <Banner />
+                <div className='test'>
+                This is a component
+                <span className='fa fa-exclamation fa-lg'></span>
+                </div>
+                </div>);
     }
 });
 
