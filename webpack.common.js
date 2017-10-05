@@ -19,24 +19,6 @@ const copy = new CopyWebpackPlugin([
         toType: 'dir'
     },
     {
-        from: 'node_modules/bootstrap/dist/css/bootstrap.min.css',
-        to: 'styles/vendor/bootstrap/css/'
-    },
-    {
-        from: 'node_modules/bootstrap/dist/fonts',
-        to: 'styles/vendor/bootstrap/fonts/',
-        toType: 'dir'
-    },
-    {
-        from: 'node_modules/font-awesome/css/font-awesome.min.css',
-        to: 'styles/vendor/font-awesome/css/'
-    },
-    {
-        from: 'node_modules/font-awesome/fonts',
-        to: 'styles/vendor/font-awesome/fonts/',
-        toType: 'dir'
-    },
-    {
         from: sourceDir + '/favicon.ico'
     }
 ]);
