@@ -76,6 +76,46 @@ module.exports = {
             },
             {
                 test: /\.js$/,
+                enforce: "pre",
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "jsxhint-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.jsx$/,
+                enforce: "pre",
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "jsxhint-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.js$/,
+                enforce: "pre",
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "jscs-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.jsx$/,
+                enforce: "pre",
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: "jscs-loader"
+                    }
+                ]
+            },
+            {
+                test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
                     loader: 'babel-loader',
