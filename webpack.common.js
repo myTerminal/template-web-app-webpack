@@ -75,7 +75,7 @@ module.exports = {
                 })
             },
             {
-                test: /\.js$/,
+                test: /\.(jsx|js)$/,
                 enforce: "pre",
                 exclude: /node_modules/,
                 use: [
@@ -85,17 +85,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.jsx$/,
-                enforce: "pre",
-                exclude: /node_modules/,
-                use: [
-                    {
-                        loader: "jsxhint-loader"
-                    }
-                ]
-            },
-            {
-                test: /\.js$/,
+                test: /\.(jsx|js)$/,
                 enforce: "pre",
                 exclude: /node_modules/,
                 use: [
@@ -105,29 +95,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.jsx$/,
-                enforce: "pre",
-                exclude: /node_modules/,
-                use: [
-                    {
-                        loader: "jscs-loader"
-                    }
-                ]
-            },
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: [
-                            'babel-preset-env'
-                        ]
-                    }
-                }
-            },
-            {
-                test: /\.jsx$/,
+                test: /\.(jsx|js)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
