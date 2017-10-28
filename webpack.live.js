@@ -7,6 +7,7 @@ const devConfig = require('./webpack.dev.js');
 
 module.exports = WebpackMerge(devConfig, {
     devServer: {
-        contentBase: './' + outputDir
+        contentBase: './' + outputDir,
+        historyApiFallback: true
     }
 });
