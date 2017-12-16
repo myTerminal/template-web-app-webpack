@@ -25,6 +25,7 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
  - [ReactDOM](https://facebook.github.io/react/docs/react-dom.html)
  - [ReactRouterDOM](https://www.npmjs.com/package/react-router-dom)
  - [Bootstrap 3](https://getbootstrap.com/docs/3.3/)
+ - [Font Awesome](http://fontawesome.io/)
  - [jQuery](https://jquery.com/) as a dependency for Bootstrap
  - [ES2015](http://es6-features.org/)
  - [Less CSS](http://lesscss.org/)
