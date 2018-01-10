@@ -72,3 +72,7 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
  Please note that Express is not the web-server in this mode and hence any web-services implemented in "src\server\index.js" will not work.
  - `npm run build` to run Webpack with production configuration.  
  In this mode, Webpack minifies the JavaScript bundles and there are no source-maps created.
+ 
+## To-Do
+
+ - Find a way to write and run tests
