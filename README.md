@@ -7,7 +7,6 @@
 [![devDependency Status](https://david-dm.org/myTerminal/template-web-webpack/dev-status.svg)](https://david-dm.org/myTerminal/template-web-webpack#info=devDependencies)
 [![peer Dependency Status](https://david-dm.org/myTerminal/template-web-webpack/peer-status.svg)](https://david-dm.org/myTerminal/template-web-webpack#info=peerDependencies)  
 [![License](https://img.shields.io/badge/LICENSE-GPL%20v3.0-blue.svg)](https://www.gnu.org/licenses/gpl.html)
-[![Gratipay](http://img.shields.io/gratipay/myTerminal.svg)](https://gratipay.com/myTerminal)  
 
 A template to create web applications on [Node.js](https://nodejs.org/) with [Webpack](https://webpack.js.org/) as the module-bundler
 
