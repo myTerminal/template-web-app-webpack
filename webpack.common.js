@@ -5,6 +5,7 @@ const outputDir = 'public';
 
 const path = require('path');
 
+const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -29,6 +30,7 @@ const html = new HtmlWebpackPlugin({
 });
 
 module.exports = {
+    mode: 'development',
     entry: {
         app: './' + sourceDir + '/scripts/app.jsx'
     },
@@ -115,10 +117,11 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.LoaderOptionsPlugin({ options: {} }),
         clean,
         copy,
         extractCSS,
-        html
+        html,
     ],
     output: {
         filename: 'scripts/[name].js',
