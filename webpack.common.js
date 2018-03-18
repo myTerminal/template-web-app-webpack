@@ -121,7 +121,7 @@ module.exports = {
         clean,
         copy,
         extractCSS,
-        html
+        html,
     ],
     output: {
         filename: 'scripts/[name].js',
