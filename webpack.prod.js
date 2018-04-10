@@ -9,6 +9,7 @@ const WebpackMerge = require('webpack-merge');
 const commonConfig = require('./webpack.common.js');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const copy = new CopyWebpackPlugin([
     {
@@ -20,11 +21,18 @@ const copy = new CopyWebpackPlugin([
         }
     }
 ]);
+const html = new HtmlWebpackPlugin({
+    template: sourceDir + '/index.html',
+    filename: 'index.html',
+    chunks: ['app'],
+    hash: true
+});
 
 module.exports = WebpackMerge(commonConfig, {
     mode: 'production',
     plugins: [
         copy,
-        new UglifyJSPlugin()
+        new UglifyJSPlugin(),
+        html
     ]
 });
