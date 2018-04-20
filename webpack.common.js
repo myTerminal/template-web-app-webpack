@@ -83,17 +83,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'jsxhint-loader'
-                    }
-                ]
-            },
-            {
-                test: /\.(jsx|js)$/,
-                enforce: 'pre',
-                exclude: /node_modules/,
-                use: [
-                    {
-                        loader: 'jscs-loader'
+                        loader: 'eslint-loader'
                     }
                 ]
             },
@@ -117,7 +107,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.LoaderOptionsPlugin({ options: {} }),
         clean,
         copy,
         extractCSS,
