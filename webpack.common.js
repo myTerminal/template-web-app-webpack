@@ -20,6 +20,13 @@ const copy = new CopyWebpackPlugin([
     },
     {
         from: sourceDir + '/favicon.ico'
+    },
+    {
+        from: sourceDir + '/manifest.json'
+    },
+    {
+        from: sourceDir + '/icons',
+        to: 'icons'
     }
 ]);
 const extractCSS = new ExtractTextPlugin('styles/styles.css');
