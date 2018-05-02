@@ -1,9 +1,9 @@
 import React from 'react';
 
 export default class Banner extends React.Component {
-    render () {
+    render() {
         return (
-            <div className='banner'></div>
+            <div className="banner" />
         );
     }
 }
