@@ -1,8 +1,6 @@
 # template-web-webpack
 
-[![Code Climate](https://codeclimate.com/github/myTerminal/template-web-webpack.png)](https://codeclimate.com/github/myTerminal/template-web-webpack)
-[![bitHound Overall Score](https://www.bithound.io/github/myTerminal/template-web-webpack/badges/score.svg)](https://www.bithound.io/github/myTerminal/template-web-webpack)
-[![bitHound Code](https://www.bithound.io/github/myTerminal/template-web-webpack/badges/code.svg)](https://www.bithound.io/github/myTerminal/template-web-webpack)  
+[![Code Climate](https://codeclimate.com/github/myTerminal/template-web-webpack.png)](https://codeclimate.com/github/myTerminal/template-web-webpack)  
 [![Dependency Status](https://david-dm.org/myTerminal/template-web-webpack.svg)](https://david-dm.org/myTerminal/template-web-webpack)
 [![devDependency Status](https://david-dm.org/myTerminal/template-web-webpack/dev-status.svg)](https://david-dm.org/myTerminal/template-web-webpack#info=devDependencies)
 [![peer Dependency Status](https://david-dm.org/myTerminal/template-web-webpack/peer-status.svg)](https://david-dm.org/myTerminal/template-web-webpack#info=peerDependencies)  
