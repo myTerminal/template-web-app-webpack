@@ -14,7 +14,7 @@ this.addEventListener('install', function (event) {
                     origin + 'scripts/app.js',
                     origin + 'images/pencils.jpg',
                     origin + 'fonts/fontawesome-webfont.woff2',
-                    origin + 'fonts/OpenSans-Light.ttf'
+                    origin + 'fonts/OpenSans-Regular.ttf'
                 ]
             );
         }).catch(function (err) {
