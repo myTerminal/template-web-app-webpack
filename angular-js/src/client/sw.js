@@ -15,7 +15,11 @@ this.addEventListener('install', function (event) {
                     origin + 'images/pencils.jpg',
                     origin + 'fonts/OpenSans-Regular.ttf',
                     origin + 'fonts/fontawesome-webfont.woff2',
-                    origin + 'manifest.json'
+                    origin + 'icons/launcher-icon-1x.png',
+                    origin + 'icons/launcher-icon-2x.png',
+                    origin + 'icons/launcher-icon-4x.png',
+                    origin + 'manifest.json',
+                    origin + 'favicon.ico'
                 ]
             );
         }).catch(function (err) {
