@@ -16,26 +16,44 @@ angular.module('templateWeb', ['ui.router'])
         '$stateProvider',
         '$urlRouterProvider',
         function ($stateProvider, $urlRouterProvider) {
-            $urlRouterProvider.otherwise('/main');
+            $urlRouterProvider.otherwise('/home');
 
-            $stateProvider.state('main', {
-                url: '/main',
-                controller: 'mainController',
-                controllerAs: 'main',
-                template: require('./templates/template1.html')
-            });
+            $stateProvider
+                .state('home', {
+                    url: '/home',
+                    controller: 'homeController',
+                    controllerAs: 'home',
+                    template: require('./templates/home.html')
+                })
+                .state('about', {
+                    url: '/about',
+                    controller: 'aboutController',
+                    controllerAs: 'about',
+                    template: require('./templates/about.html')
+                });
         }
     ])
 
     .controller(
-        'mainController',
+        'homeController',
         [
             '$scope',
             '$http',
             function ($scope, $http) {
                 var self = this;
 
-                self.getMessage = () => 'This is a template';
+                self.message = 'This is home';
             }
-        ]
-    );
+        ])
+
+    .controller(
+        'aboutController',
+        [
+            '$scope',
+            '$http',
+            function ($scope, $http) {
+                var self = this;
+
+                self.message = 'This is about';
+            }
+        ]);
