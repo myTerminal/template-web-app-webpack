@@ -1,10 +1,4 @@
-# template-web-webpack
-
-[![Code Climate](https://codeclimate.com/github/myTerminal/template-web-webpack.png)](https://codeclimate.com/github/myTerminal/template-web-webpack)  
-[![Dependency Status](https://david-dm.org/myTerminal/template-web-webpack.svg)](https://david-dm.org/myTerminal/template-web-webpack)
-[![devDependency Status](https://david-dm.org/myTerminal/template-web-webpack/dev-status.svg)](https://david-dm.org/myTerminal/template-web-webpack#info=devDependencies)
-[![peer Dependency Status](https://david-dm.org/myTerminal/template-web-webpack/peer-status.svg)](https://david-dm.org/myTerminal/template-web-webpack#info=peerDependencies)  
-[![License](https://img.shields.io/badge/LICENSE-GPL%20v3.0-blue.svg)](https://www.gnu.org/licenses/gpl.html)
+# react
 
 A template to create web applications on [Node.js](https://nodejs.org/) with [Webpack](https://webpack.js.org/) as the module-bundler
 
