@@ -65,4 +65,4 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 ## To-Do
 
  - Minify service-worker script file
- - Find a way to write and run tests
+ - Write unit-tests
