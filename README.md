@@ -8,3 +8,4 @@ A set of templates to create web applications on [Node.js](https://nodejs.org/) 
 
  - [AngularJS](angular-js)
  - [React](react)
+ - [Vue.js](vue-js)
