@@ -66,3 +66,4 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 
  - Minify service-worker script file
  - Write unit-tests
+ - Implement CSS modules
