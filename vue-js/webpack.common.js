@@ -127,6 +127,6 @@ module.exports = {
     output: {
         filename: 'scripts/[name].js',
         path: path.resolve(__dirname, outputDir),
-        publicPath: ''
+        publicPath: '/'
     }
 };
