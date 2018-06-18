@@ -95,7 +95,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.js$/,
+                test: /\.(vue|js)$/,
                 enforce: 'pre',
                 exclude: /node_modules/,
                 use: [

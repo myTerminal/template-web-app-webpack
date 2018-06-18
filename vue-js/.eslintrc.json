@@ -1,5 +1,8 @@
 {
-  "extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "plugin:vue/essential"
+  ],
   "rules": {
     "linebreak-style": ["off"],
     "eol-last": ["off"],

@@ -45,6 +45,7 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 
  - [babel-core](https://www.npmjs.com/package/babel-core), [babel-preset-env](https://www.npmjs.com/package/babel-preset-env) to support babel-loader
  - [eslint](https://www.npmjs.com/package/eslint), [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb), [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import), [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) and [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) to support eslint-loader in running ESLint to lint JavaScript files
+ - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) to support eslint-loader to linting '.vue' files
  - [less](https://www.npmjs.com/package/less) to help less-loader with transpilation of Less CSS into regular CSS
  - [vue-template-compiler](https://www.npmjs.com/package/vue-template-compiler) to support vue-loader
  - [webpack-merge](https://www.npmjs.com/package/webpack-merge) to be able to use a common configuration across *dev* and *prod*
@@ -64,6 +65,5 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
  
 ## To-Do
 
- - Set up eslint for Vue
  - Minify service-worker script file
  - Write unit-tests
