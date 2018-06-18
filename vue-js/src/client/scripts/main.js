@@ -32,7 +32,7 @@ const router = new VueRouter({
     routes,
     mode: 'history',
     linkActiveClass: 'active',
-    linkExactActiveClass: 'exact-active',
+    linkExactActiveClass: 'exact-active'
 });
 
 export default new Vue({
