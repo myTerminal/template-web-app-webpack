@@ -35,13 +35,13 @@ const vueLoaderPlugin = new VueLoaderPlugin();
 const html = new HtmlWebpackPlugin({
     template: sourceDir + '/index.html',
     filename: 'index.html',
-    chunks: ['main']
+    chunks: ['app']
 });
 
 module.exports = {
     mode: 'development',
     entry: {
-        main: './' + sourceDir + '/scripts/main.js'
+        app: './' + sourceDir + '/scripts/app.js'
     },
     module: {
         rules: [
