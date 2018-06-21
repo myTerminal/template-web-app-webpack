@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 import './service-worker-starter.js';
 
-import App from './App.vue';
+import App from './components/App.vue';
 
 import PageHome from './components/PageHome.vue';
 import PageAbout from './components/PageAbout.vue';

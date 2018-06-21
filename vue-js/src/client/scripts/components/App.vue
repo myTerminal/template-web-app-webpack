@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Banner from './components/Banner.vue';
-import Navigation from './components/Navigation.vue';
+import Banner from './Banner.vue';
+import Navigation from './Navigation.vue';
 
 export default {
     components: {
