@@ -10,7 +10,6 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const clean = new CleanWebpackPlugin([outputDir]);
 const copy = new CopyWebpackPlugin([
@@ -32,11 +31,6 @@ const copy = new CopyWebpackPlugin([
 ]);
 const extractCSS = new ExtractTextPlugin('styles/styles.css');
 const vueLoaderPlugin = new VueLoaderPlugin();
-const html = new HtmlWebpackPlugin({
-    template: sourceDir + '/index.html',
-    filename: 'index.html',
-    chunks: ['app']
-});
 
 module.exports = {
     mode: 'development',
@@ -121,8 +115,7 @@ module.exports = {
         clean,
         copy,
         extractCSS,
-        vueLoaderPlugin,
-        html
+        vueLoaderPlugin
     ],
     output: {
         filename: 'scripts/[name].js',
