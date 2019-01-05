@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="templateWeb">
+<html>
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
@@ -11,23 +11,12 @@
         <meta property="og:url" content="http://template.domain.com">
         <meta property="og:image" content="http://template.domain.com/icons/launcher-icon-4x.png">
 
-        <title>template-web-gulp</title>
+        <title><%= titlePrefix %>template-web-webpack</title>
 
         <link rel="manifest" href="manifest.json">
     </head>
 
     <body>
-        <div class="banner"></div>
-        <div class="navigation">
-            <div class="navigation-button" ui-sref="home" ui-sref-active="active">
-                (<span class="fa fa-home"></span>)
-                Home
-            </div>
-            <div class="navigation-button" ui-sref="about" ui-sref-active="active">
-                (<span class="fa fa-info"></span>)
-                About
-            </div>
-        </div>
-        <div id="page" ui-view></div>
+        <div id="page"></div>
     </body>
 </html>
