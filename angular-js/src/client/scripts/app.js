@@ -1,4 +1,4 @@
-/* global global require */
+/* global global require module */
 
 require('./service-worker-starter');
 require('../styles/styles.less');
@@ -57,3 +57,7 @@ angular.module('templateWeb', ['ui.router'])
                 self.message = 'This is about';
             }
         ]);
+
+if (module.hot) {
+    module.hot.accept();
+}

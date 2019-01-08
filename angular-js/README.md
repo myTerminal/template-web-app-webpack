@@ -35,6 +35,8 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 - [html-loader](https://www.npmjs.com/package/html-loader) to bundle html entry points
 - [style-loader](https://www.npmjs.com/package/style-loader) to bundle CSS stylesheets
 - [css-loader](https://www.npmjs.com/package/css-loader) to work with style-loader for bundling of CSS stylesheets
+- [extracted-loader](https://www.npmjs.com/package/css-loaderextracted
+-loader) to enable CSS hot-reloads with extracted CSS
 - [less-loader](https://www.npmjs.com/package/less-loader) to transpile Less CSS into regular CSS
 - [file-loader](https://www.npmjs.com/package/file-loader) to work with other file types
 - [eslint-loader](https://www.npmjs.com/package/eslint-loader) to run ESLint on JavaScript files

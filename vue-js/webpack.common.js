@@ -65,7 +65,7 @@ module.exports = {
             },
             {
                 test: /\.(less|css)$/,
-                use: extractCSS.extract({
+                use: ['extracted-loader'].concat(extractCSS.extract({
                     fallback: 'style-loader',
                     use: [
                         {
@@ -78,7 +78,7 @@ module.exports = {
                             loader: 'less-loader'
                         }
                     ]
-                })
+                }))
             },
             {
                 test: /\.vue$/,

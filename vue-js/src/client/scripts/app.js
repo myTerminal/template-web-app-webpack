@@ -1,3 +1,5 @@
+/* global global require module */
+
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
@@ -40,3 +42,7 @@ export default new Vue({
     router,
     render: c => c(App)
 });
+
+if (module.hot) {
+    module.hot.accept();
+}
