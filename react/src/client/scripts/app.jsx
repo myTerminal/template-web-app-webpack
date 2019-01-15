@@ -21,6 +21,10 @@ global.jQuery = require('jquery');
 const $ = global.jQuery;
 const Bootstrap = require('bootstrap');
 
+const configs = require('../../../configs.json'),
+    isProductionMode = process.env.NODE_ENV === 'production',
+    baseUrl = isProductionMode ? configs.origin : '/';
+
 class App extends React.Component {
     constructor() {
         super();
@@ -48,7 +52,7 @@ class App extends React.Component {
 }
 
 ReactDOM.render((
-    <BrowserRouter>
+    <BrowserRouter basename={baseUrl}>
         <App />
     </BrowserRouter>
 ), document.getElementById('page'));
