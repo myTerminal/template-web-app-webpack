@@ -1,4 +1,4 @@
-/* global global require module */
+/* global global require process module */
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
@@ -17,6 +17,10 @@ global.jQuery = require('jquery');
 const $ = global.jQuery;
 const Bootstrap = require('bootstrap');
 
+const configs = require('../../../configs.json'),
+    isProductionMode = process.env.NODE_ENV === 'production',
+    baseUrl = isProductionMode ? configs.origin : '/';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -32,6 +36,7 @@ const routes = [
 
 const router = new VueRouter({
     routes,
+    base: baseUrl,
     mode: 'history',
     linkActiveClass: 'active',
     linkExactActiveClass: 'exact-active'
