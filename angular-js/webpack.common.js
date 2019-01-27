@@ -13,11 +13,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const clean = new CleanWebpackPlugin([outputDir]);
 const copy = new CopyWebpackPlugin([
     {
-        from: sourceDir + '/data',
-        to: 'data',
-        toType: 'dir'
-    },
-    {
         from: sourceDir + '/favicon.ico'
     },
     {
