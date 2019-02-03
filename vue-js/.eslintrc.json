@@ -3,6 +3,7 @@
     "airbnb",
     "plugin:vue/essential"
   ],
+  "parser": "vue-eslint-parser",
   "rules": {
     "linebreak-style": ["off"],
     "eol-last": ["off"],
