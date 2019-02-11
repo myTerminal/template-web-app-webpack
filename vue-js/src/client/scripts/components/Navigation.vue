@@ -1,10 +1,10 @@
 <template>
 <div class="navigation">
   <router-link to="/" exact="true" class="navigation-button" router-link-exact-active="active">
-    (<span class="fa fa-home" />) Home
+    (<span class="fas fa-home" />) Home
   </router-link>
   <router-link to="/about" class="navigation-button" router-link-active="active">
-    (<span class="fa fa-info" />) About
+    (<span class="fas fa-info" />) About
   </router-link>
 </div>
 </template>

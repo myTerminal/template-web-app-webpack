@@ -22,12 +22,12 @@ export default class App extends React.Component {
                 <div className="navigation">
                     <NavLink to="/" exact className="navigation-button" activeClassName="active">
                         (
-                        <span className="fa fa-home" />
+                        <span className="fas fa-home" />
                         ) Home
                     </NavLink>
                     <NavLink to="/about" className="navigation-button" activeClassName="active">
                         (
-                        <span className="fa fa-info" />
+                        <span className="fas fa-info" />
                         ) About
                     </NavLink>
                 </div>
