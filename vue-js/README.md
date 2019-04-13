@@ -57,13 +57,13 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 
  - `npm run debug` to run Webpack with development configuration.  
  In this mode, Webpack generates source-maps for bundled JavaScript resources to simplify debugging of JavaScript in the web-browser.
- - `npm run develop` to run Webpack with development configuration and keep watching for file changes within source.  
+ - `npm run develop` to run Webpack with development configuration and keep watching for file changes within the source.  
  In this mode, Webpack generates source-maps for bundled JavaScript resources to simplify debugging of JavaScript in the web-browser.
- - `npm run live` to run Webpack with development configuration and keep watching for file changes within source and reload the web-browser on every change.  
+ - `npm run live` to run Webpack with development configuration and keep watching for file changes within the source and reload the web-browser on every change.  
  In this mode, Webpack generates source-maps for bundled JavaScript resources to simplify debugging of JavaScript in the web-browser and provides a live-development experience.  
  Please note that Express is not the web-server in this mode and hence any web-services implemented in "src\server\index.js" will not work.
  - `npm run build` to run Webpack with production configuration.  
- In this mode, Webpack minifies the JavaScript bundles and there are no source-maps created.
+ In this mode, Webpack minifies the JavaScript bundles and there is no source-map created.
  
 ## To-Do
 
