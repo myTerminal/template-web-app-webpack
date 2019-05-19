@@ -14,7 +14,7 @@ this.addEventListener('install', function (event) {
                     origin + 'scripts/app.js',
                     origin + 'images/pencils.jpg',
                     origin + 'fonts/OpenSans-Regular.ttf',
-                    origin + 'fonts/fontawesome-webfont.woff2',
+                    origin + 'fonts/fa-solid-900.woff2',
                     origin + 'icons/launcher-icon-1x.png',
                     origin + 'icons/launcher-icon-2x.png',
                     origin + 'icons/launcher-icon-4x.png',
