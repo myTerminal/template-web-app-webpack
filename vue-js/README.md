@@ -49,6 +49,7 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
  - [eslint](https://www.npmjs.com/package/eslint), [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser), [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb), [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import), [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) and [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) to support eslint-loader in running ESLint to lint JavaScript files
  - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) to support eslint-loader to linting '.vue' files
  - [less](https://www.npmjs.com/package/less) to help less-loader with transpilation of Less CSS into regular CSS
+ - [effortless-css](https://www.npmjs.com/package/effortless-css) to provide Less CSS mixins
  - [vue-template-compiler](https://www.npmjs.com/package/vue-template-compiler) to support vue-loader
  - [webpack-merge](https://www.npmjs.com/package/webpack-merge) to be able to use a common configuration across *dev* and *prod*
  - [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) to be able to live-reload the web-browser when run in *live* mode.
