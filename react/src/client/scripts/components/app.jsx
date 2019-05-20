@@ -30,6 +30,11 @@ export default class App extends React.Component {
                         <span className="fas fa-info" />
                         ) About
                     </NavLink>
+                    <div id="pwa-install" className="navigation-button" style={{ display: 'none' }}>
+                        (
+                        <span className="fas fa-plus"></span>
+                        ) Install as app
+                    </div>
                 </div>
                 <Route path="/" exact component={Home} />
                 <Route path="/about" component={About} />
