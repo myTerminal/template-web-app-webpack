@@ -3,7 +3,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import './service-worker-starter.js';
+import './pwa';
 
 import App from './components/App.vue';
 

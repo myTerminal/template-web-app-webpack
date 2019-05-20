@@ -6,6 +6,9 @@
   <router-link to="/about" class="navigation-button" router-link-active="active">
     (<span class="fas fa-info" />) About
   </router-link>
+  <div id="pwa-install" class="navigation-button" style="display: none;">
+    (<span class="fas fa-plus" />) Install as app
+  </div>
 </div>
 </template>
 
