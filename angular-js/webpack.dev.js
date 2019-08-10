@@ -10,16 +10,15 @@ const commonConfig = require('./webpack.common.js');
 
 const copy = new CopyWebpackPlugin([
     {
-        from: sourceDir + '/manifest.json',
-        transform: function (content, path) {
-            return content.toString()
-                .replace(/#manifest-origin#/g, '/');
-        }
+        from: `${sourceDir}/manifest.json`,
+        transform: (content, path) =>
+            content.toString()
+                .replace(/#manifest-origin#/g, '/')
     }
 ]);
 
 const html = new HtmlWebpackPlugin({
-    template: sourceDir + '/index.ejs',
+    template: `${sourceDir}/index.ejs`,
     templateParameters: {
         titlePrefix: '[DEBUG] ',
         baseUrl: '/'

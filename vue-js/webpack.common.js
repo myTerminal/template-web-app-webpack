@@ -15,10 +15,10 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const clean = new CleanWebpackPlugin([outputDir]);
 const copy = new CopyWebpackPlugin([
     {
-        from: sourceDir + '/favicon.ico'
+        from: `${sourceDir}/favicon.ico`
     },
     {
-        from: sourceDir + '/icons',
+        from: `${sourceDir}/icons`,
         to: 'icons'
     }
 ]);
@@ -29,7 +29,7 @@ const vueLoaderPlugin = new VueLoaderPlugin();
 module.exports = {
     mode: 'development',
     entry: {
-        app: './' + sourceDir + '/scripts/app.js'
+        app: `./${sourceDir}/scripts/app.js`
     },
     module: {
         rules: [
