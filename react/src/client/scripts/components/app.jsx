@@ -32,7 +32,7 @@ export default class App extends React.Component {
                     </NavLink>
                     <div id="pwa-install" className="navigation-button" style={{ display: 'none' }}>
                         (
-                        <span className="fas fa-plus"></span>
+                        <span className="fas fa-plus" />
                         ) Install as app
                     </div>
                 </div>
