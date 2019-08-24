@@ -47,7 +47,7 @@ A template to create web applications on [Node.js](https://nodejs.org/) with [We
 ##### Supporting dependencies
 
  - [babel-core](https://www.npmjs.com/package/babel-core), [babel-preset-env](https://www.npmjs.com/package/babel-preset-env) to support babel-loader
- - [eslint](https://www.npmjs.com/package/eslint), [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser), [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb), [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import), [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) and [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) to support eslint-loader in running ESLint to lint JavaScript files
+ - [eslint](https://www.npmjs.com/package/eslint), [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser), [eslint-config-myterminal](https://www.npmjs.com/package/eslint-config-myterminal), [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb), [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import), [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) and [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) to support eslint-loader in running ESLint to lint JavaScript files
  - [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) to support eslint-loader to linting '.vue' files
  - [less](https://www.npmjs.com/package/less) to help less-loader with transpilation of Less CSS into regular CSS
  - [effortless-css](https://www.npmjs.com/package/effortless-css) to provide Less CSS mixins
