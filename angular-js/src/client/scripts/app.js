@@ -10,7 +10,7 @@ var angular = require('angular'),
     bootstrap = require('bootstrap'),
     $ = global.jQuery;
 
-angular.module('templateWeb', ['ui.router'])
+angular.module('templateWebApp', ['ui.router'])
 
     .config([
         '$stateProvider',

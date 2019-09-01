@@ -1,7 +1,7 @@
 {
-  "name": "template-web",
+  "name": "template-web-app",
   "version": "1.0.0",
-  "description": "template-web",
+  "description": "template-web-app",
   "main": "src/server/index.js",
   "scripts": {
     "debug": "webpack --config webpack.dev.js",
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:myTerminal/template-web-webpack.git"
+    "url": "git@github.com:myTerminal/template-web-app-webpack.git"
   },
   "bugs": {
-    "url": "https://github.com/myTerminal/template-web-webpack/issues"
+    "url": "https://github.com/myTerminal/template-web-app-webpack/issues"
   },
-  "homepage": "https://github.com/myTerminal/template-web-webpack#readme",
+  "homepage": "https://github.com/myTerminal/template-web-app-webpack#readme",
   "keywords": [
     "template"
   ],
