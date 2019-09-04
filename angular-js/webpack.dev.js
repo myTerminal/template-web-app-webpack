@@ -13,7 +13,7 @@ const copy = new CopyWebpackPlugin([
         from: `${sourceDir}/manifest.json`,
         transform: (content, path) =>
             content.toString()
-                .replace(/#manifest-origin#/g, '/')
+            .replace(/#manifest-origin#/g, '/')
     }
 ]);
 
@@ -27,10 +27,13 @@ const html = new HtmlWebpackPlugin({
     chunks: ['app']
 });
 
-module.exports = WebpackMerge(commonConfig, {
-    devtool: 'inline-source-map',
-    plugins: [
-        copy,
-        html
-    ]
-});
+module.exports = WebpackMerge(
+    commonConfig,
+    {
+        devtool: 'inline-source-map',
+        plugins: [
+            copy,
+            html
+        ]
+    }
+);
