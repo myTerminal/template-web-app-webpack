@@ -11,7 +11,7 @@ module.exports = function (url) {
     const app = express(),
         baseUrl = path.join(__dirname, '../../');
 
-    app.use(express.static(path.join(baseUrl, 'public')));
+    app.use('/assets', express.static(path.join(baseUrl, 'public')));
     app.use(bodyParser.json());
 
     app.listen(url, () => {
